@@ -1,7 +1,7 @@
 module.exports = {
   index: async (req, res) => {
     try {
-      res.render("index", {
+      await res.render("index", {
         title: "Express JS",
       });
     } catch (err) {
