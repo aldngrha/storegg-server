@@ -12,7 +12,7 @@ module.exports = {
       // const player = await Player.countDocuments()
       const category = await Category.countDocuments()
       res.render('admin/dashboard/view_dashboard', {
-        // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Dashboard',
         count: {
           // transaction,

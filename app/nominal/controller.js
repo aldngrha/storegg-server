@@ -12,7 +12,7 @@ module.exports={
       res.render('admin/nominal/view_nominal',{
         nominal,
         alert,
-        // // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Nominal'
       })
     } catch (err) {
@@ -25,7 +25,7 @@ module.exports={
   viewCreate : async(req, res)=>{
     try {
       res.render('admin/nominal/create',{
-        // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Tambah Nominal'
       })
     } catch (err) {
@@ -62,7 +62,7 @@ module.exports={
 
       res.render('admin/nominal/edit', {
         nominal,
-        // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Ubah Nominal'
       })
       

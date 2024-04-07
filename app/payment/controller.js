@@ -13,7 +13,7 @@ module.exports = {
       res.render('admin/payment/view_payment', {
         payment,
         alert,
-        // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Metode Pembayaran'
       })
     } catch (err) {
@@ -28,7 +28,7 @@ module.exports = {
       const banks = await Bank.find()
       res.render('admin/payment/create', {
         banks,
-        // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Tambah Metode Pembayaran'
       })
     } catch (err) {
@@ -67,7 +67,7 @@ module.exports = {
       res.render('admin/payment/edit', {
         payment,
         banks,
-        // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Ubah Metode Pembayaran'
       })
 

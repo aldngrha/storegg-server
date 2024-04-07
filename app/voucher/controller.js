@@ -19,7 +19,7 @@ module.exports = {
       res.render('admin/voucher/view_voucher', {
         voucher,
         alert,
-        // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Voucher'
       })
     } catch (err) {
@@ -36,7 +36,7 @@ module.exports = {
       res.render('admin/voucher/create', {
         category,
         nominal,
-        // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Tambah Voucher'
       })
     } catch (err) {
@@ -118,7 +118,7 @@ module.exports = {
         voucher,
         nominal,
         category,
-        // name: req.session.user.name,
+        name: req.session.user.name,
         title: 'StoreGG - Ubah Voucher'
       })
 
