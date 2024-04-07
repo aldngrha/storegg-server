@@ -206,7 +206,7 @@ module.exports = {
         _id: id
       });
 
-      let currentImage = `${config.rootPath}/public/uploads/${voucher.thumbnial}`;
+      let currentImage = `${config.rootPath}/public/uploads/${voucher.thumbnail}`;
       if(fs.existsSync(currentImage)){
         fs.unlinkSync(currentImage)
       }
