@@ -13,7 +13,7 @@ module.exports = {
       const category = await Category.countDocuments()
       res.render('admin/dashboard/view_dashboard', {
         // name: req.session.user.name,
-        title: 'Halaman Dashboard',
+        title: 'StoreGG - Dashboard',
         count: {
           // transaction,
           // player,
